@@ -82,6 +82,8 @@
     "statusBarItem.prominentBackground": "#181818",
     "statusBarItem.remoteBackground": "#4d9375",
     "statusBarItem.remoteForeground": "#fff",
+    "statusBarItem.remoteHoverBackground": "#36bc83",
+    "statusBarItem.remoteHoverForeground": "#fff",
     "editorGroupHeader.tabsBackground": "#121212",
     "editorGroupHeader.tabsBorder": "#1e1e1e",
     "editorGroup.border": "#1e1e1e",
