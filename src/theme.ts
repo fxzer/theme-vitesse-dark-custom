@@ -124,6 +124,8 @@ export default function getTheme({ name }) {
       // 新增
       'statusBarItem.remoteBackground': primary,
       'statusBarItem.remoteForeground': '#fff',
+      'statusBarItem.remoteHoverBackground': '#36bc83',
+      'statusBarItem.remoteHoverForeground': '#fff',
 
       'editorGroupHeader.tabsBackground': background,
       'editorGroupHeader.tabsBorder': border,
