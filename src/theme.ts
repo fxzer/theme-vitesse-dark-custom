@@ -87,16 +87,15 @@ export default function getTheme({ name }) {
 
       'list.hoverForeground': foreground,
       'list.inactiveSelectionForeground': foreground,
-      'list.activeSelectionForeground': foreground,
       'list.activeSelectionBackground': listSelectionBackground, // 文件列表选中背景色
       'list.inactiveFocusBackground': background,
       'list.focusBackground': activeBackground,
       'list.highlightForeground': primary,
       // ------------ 修改 ------------
+      'list.activeSelectionForeground': '#f5f5f5',
       'list.focusOutline': listSelectionBackground,
       'list.hoverBackground': activePlusBackground,
-      'list.inactiveSelectionBackground': activePlusBackground,
-
+      'list.inactiveSelectionBackground': '#3d886b37',
       'tree.indentGuidesStroke': primer.gray[1],
 
       'notificationCenterHeader.foreground': primer.gray[5],
