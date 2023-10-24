@@ -25,12 +25,12 @@ VSCode 扩展市场安装[Vitesse Dark Custom](https://marketplace.visualstudio.
 - 非当前行号前景变淡
 - 加深 Tab 激活背景色
 - 新增输入框选项按钮边框色
-- 逗号提亮（解决与 copilot 提示分不清问题）
+- 逗号/分号提亮（解决与 copilot 提示分不清问题）
 - 突显CSS/SCSS 关键字、this 关键字
 - 注释/函数参数 斜体
 - 突显文件列表中当前激活、聚集的文件，顶部命令中心聚焦背景色
 
-## 简化自己的VSCode全局配置
+## 简化自己的 VSCode 全局配置
 ```json
 // .vscode/setting.json
 {
