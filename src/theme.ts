@@ -112,7 +112,7 @@ export default function getTheme({ name }) {
       'pickerGroup.foreground': foreground,
       'quickInput.background': background,
       'quickInput.foreground': foreground,
-      'quickInputList.focusBackground': activeBackground,
+      'quickInputList.focusBackground': listSelectionBackground,
 
       'statusBar.foreground': activeForeground,
       'statusBar.background': background,
@@ -149,7 +149,7 @@ export default function getTheme({ name }) {
       'editorWidget.background': background,
       'editor.foldBackground': '#eeeeee10',
       'editor.lineHighlightBackground': activeBackground,
-      'editorLineNumber.foreground': '#dedcd526',
+      'editorLineNumber.foreground': '#dedcd51a',
       'editorLineNumber.activeForeground': activeForeground,
       'editorIndentGuide.background': '#ffffff15',
       'editorIndentGuide.activeBackground': '#ffffff30',

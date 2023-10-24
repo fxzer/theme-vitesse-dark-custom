@@ -28,7 +28,7 @@ VSCode 扩展市场安装[Vitesse Dark Custom](https://marketplace.visualstudio.
 - 逗号提亮（解决与 copilot 提示分不清问题）
 - 突显CSS/SCSS 关键字、this 关键字
 - 注释/函数参数 斜体
-- 突显文件列表中当前激活、聚集的文件
+- 突显文件列表中当前激活、聚集的文件，顶部命令中心聚焦背景色
 
 ## 简化自己的VSCode全局配置
 ```json
