@@ -121,6 +121,11 @@ export default function getTheme({ name }) {
       'statusBar.debuggingBackground': activeBackground,
       'statusBar.debuggingForeground': activeForeground,
       'statusBarItem.prominentBackground': activeBackground,
+      // 新增
+      'statusBarItem.remoteBackground': primer.blue[4],
+      'statusBarItem.remoteForeground': primer.gray[8],
+      'statusBarItem.hoverBackground': primer.blue[5],
+      'statusBarItem.hoverForeground': primer.gray[10],
 
       'editorGroupHeader.tabsBackground': background,
       'editorGroupHeader.tabsBorder': border,
