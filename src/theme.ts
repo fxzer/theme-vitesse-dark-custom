@@ -149,7 +149,7 @@ export default function getTheme({ name }) {
       'editorWidget.background': background,
       'editor.foldBackground': '#eeeeee10',
       'editor.lineHighlightBackground': activeBackground,
-      'editorLineNumber.foreground': vitesse('ignored'),
+      'editorLineNumber.foreground': '#dedcd526',
       'editorLineNumber.activeForeground': activeForeground,
       'editorIndentGuide.background': '#ffffff15',
       'editorIndentGuide.activeBackground': '#ffffff30',
@@ -171,7 +171,7 @@ export default function getTheme({ name }) {
       'scrollbarSlider.background': vitesse('faded'),
       'scrollbarSlider.hoverBackground': vitesse('ignored'),
       'scrollbarSlider.activeBackground': vitesse('ignored'),
-      'editorOverviewRuler.border': primer.white,
+      'editorOverviewRuler.border': border,
 
       'panel.background': background,
       'panel.border': border, // 终端面板边框颜色

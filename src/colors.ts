@@ -23,7 +23,7 @@ export const VitesseDarkThemes = {
   foreground: '#dbd7caee',
   activeForeground: '#bfbaaa',
   secondaryForeground: '#dedcd590',
-  ignored: '#dedcd526',
+  ignored: '#dedcd550',
   faded: '#dedcd510',
   border: '#1e1e1e',
   background: '#121212',

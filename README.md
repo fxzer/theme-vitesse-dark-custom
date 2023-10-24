@@ -1,7 +1,7 @@
 <h1 align="center">Vitesse Theme Dark Custom for VS Code</h1>
 
 ## 安装
-vscode 扩展插件市场安装[Vitesse Dark Custom](https://github.com/fxzer/theme-vitesse-dark-custom)
+VSCode 扩展市场安装[Vitesse Dark Custom](https://marketplace.visualstudio.com/items?itemName=fxzer.theme-vitesse-dark-custom)
 
 ## 使用
 
