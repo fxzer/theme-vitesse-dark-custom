@@ -748,7 +748,7 @@ export default function getTheme({ name }) {
           'keyword.control.at-rule',
         ],
         settings: {
-          foreground: primer.purple[3],
+          foreground: '#c686c0',
         },
       },
       {

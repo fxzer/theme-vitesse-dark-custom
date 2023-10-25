@@ -194,7 +194,8 @@
     "editorStickyScrollHover.background": "#181818",
     "menu.separatorBackground": "#1e1e1e",
     "activityBar.activeBackground": "#181818",
-    "inputOption.activeBorder": "#4d9375"
+    "inputOption.activeBorder": "#4d9375",
+    "terminalCursor.foreground": "#08b808"
   },
   "semanticHighlighting": true,
   "semanticTokenColors": {
@@ -699,7 +700,7 @@
         "keyword.control.at-rule"
       ],
       "settings": {
-        "foreground": "#7353ac"
+        "foreground": "#c686c0"
       }
     },
     {
@@ -1223,7 +1224,7 @@
     },
     {
       "token": "keyword.control.at-rule",
-      "foreground": "7353ac"
+      "foreground": "c686c0"
     },
     {
       "token": "variable.language.this",
