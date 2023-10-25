@@ -256,6 +256,7 @@ export default function getTheme({ name }) {
       // 新增
       'activityBar.activeBackground': activeBackground, // 活动栏背景色（最左侧）
       'inputOption.activeBorder': primary,
+      'terminalCursor.foreground': '#08b808',
 
     },
     semanticHighlighting: true,
