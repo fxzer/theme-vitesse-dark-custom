@@ -688,10 +688,15 @@
       "scope": [
         "punctuation.separator.comma",
         "punctuation.terminator.expression",
-        "punctuation.terminator.statement"
+        "punctuation.terminator.statement",
+        "punctuation.terminator.rule.scss",
+        "meta.property-list.scss",
+        "meta.property-list.scss",
+        "meta.property-list.scss",
+        "source.css.scss"
       ],
       "settings": {
-        "foreground": "#959da5"
+        "foreground": "#a0a7ae"
       }
     },
     {
@@ -1212,15 +1217,35 @@
     },
     {
       "token": "punctuation.separator.comma",
-      "foreground": "959da5"
+      "foreground": "a0a7ae"
     },
     {
       "token": "punctuation.terminator.expression",
-      "foreground": "959da5"
+      "foreground": "a0a7ae"
     },
     {
       "token": "punctuation.terminator.statement",
-      "foreground": "959da5"
+      "foreground": "a0a7ae"
+    },
+    {
+      "token": "punctuation.terminator.rule.scss",
+      "foreground": "a0a7ae"
+    },
+    {
+      "token": "meta.property-list.scss",
+      "foreground": "a0a7ae"
+    },
+    {
+      "token": "meta.property-list.scss",
+      "foreground": "a0a7ae"
+    },
+    {
+      "token": "meta.property-list.scss",
+      "foreground": "a0a7ae"
+    },
+    {
+      "token": "source.css.scss",
+      "foreground": "a0a7ae"
     },
     {
       "token": "keyword.control.at-rule",

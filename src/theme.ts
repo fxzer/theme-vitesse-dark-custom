@@ -8,7 +8,6 @@ export default function getTheme({ name }) {
   const vitesse = (key: keyof typeof VitesseDarkThemes, op = '') => VitesseDarkThemes[key] + op
 
   const primer = colors
-
   const foreground = vitesse('foreground')
   const secondaryForeground = vitesse('secondaryForeground')
   const activeForeground = vitesse('activeForeground')
@@ -737,9 +736,14 @@ export default function getTheme({ name }) {
           'punctuation.separator.comma',
           'punctuation.terminator.expression',
           'punctuation.terminator.statement',
+          'punctuation.terminator.rule.scss',
+          'meta.property-list.scss',
+          'meta.property-list.scss',
+          'meta.property-list.scss',
+          'source.css.scss',
         ],
         settings: {
-          foreground: primer.gray[5],
+          foreground: primer.gray[6],
         },
       },
       {
