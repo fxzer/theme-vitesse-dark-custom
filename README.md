@@ -1,6 +1,7 @@
 <h1 align="center">Vitesse Theme Dark Custom for VS Code</h1>
 
 ## 安装
+
 VSCode 扩展市场安装[Vitesse Dark Custom](https://marketplace.visualstudio.com/items?itemName=fxzer.theme-vitesse-dark-custom)
 
 ## 使用
@@ -19,8 +20,9 @@ VSCode 扩展市场安装[Vitesse Dark Custom](https://marketplace.visualstudio.
 ## 特性
 
 根据自己使用习惯，基于 Vitesse Dark Theme 主题做了以下自定义修改。
+
 - 删除 light、soft相关主题，只保留默认暗色主题（减小扩展体积）
-- 自动根据基础色，生成 5 个更亮、更暗的颜色
+- 自动根据基础色，生成 10 个亮暗递增的颜色
 - 工作区边框线变明显
 - 光标选中文字背景色变明显
 - 非当前行号前景变淡
@@ -31,15 +33,17 @@ VSCode 扩展市场安装[Vitesse Dark Custom](https://marketplace.visualstudio.
 - 注释/函数参数改为斜体
 - 突显文件列表中当前激活、聚集的文件，顶部命令中心聚焦背景色
 - 增加 Vim 聚焦在文件列表时高亮边框样式
+- 稍微减淡字符串前景色
+
 
 ## 简化自己的 VSCode 全局配置
+
 ```json
 // .vscode/setting.json
 {
   "workbench.colorTheme": "Vitesse Dark Custom"
 }
 ```
-
 
 <details>
 <summary>之前配置</summary>
@@ -190,4 +194,3 @@ This project is based on [Vitesse Dark Theme](https://marketplace.visualstudio.c
 ## License
 
 MIT - Copyright (c) 2023 fxzer
-

@@ -1,21 +1,25 @@
-import { darken, lighten } from './utils'
+import c from 'chroma-js'
 
-function generateColorsByBase(base) {
-  const darkens = Array.from({ length: 5 }).map((_, i) => darken(base, (i + 1) / 10)).reverse()
-  const lightens = Array.from({ length: 5 }).map((_, i) => lighten(base, (i + 1) / 10))
-  // 从暗到亮
-  return [...darkens, base, ...lightens]
+function generateByBase(base) {
+  const darkens = Array.from({ length: 5 }).map((_, i) => c(base).darken(i + 1).hex())
+  const lightens = Array.from({ length: 4 }).map((_, i) => c(base).brighten(4 - i).hex())
+  // 从亮到暗
+  return [...lightens, base, ...darkens]
 }
-export const colors = {
+export function opacity(color: string, alpha: number) {
+  return c(color).alpha(alpha).hex()
+}
+
+const baseColors = {
   white: '#fff',
-  gray: generateColorsByBase('#959da5'),
-  blue: generateColorsByBase('#2188ff'),
-  green: generateColorsByBase('#34d058'),
-  yellow: generateColorsByBase('#ffdf5d'),
-  orange: generateColorsByBase('#fb8532'),
-  red: generateColorsByBase('#ea4a5a'),
-  purple: generateColorsByBase('#8a63d2'),
-  pink: generateColorsByBase('#ec6cb9'),
+  gray: '#959da5',
+  blue: '#2188ff',
+  green: '#34d058',
+  yellow: '#ffdf5d',
+  orange: '#fb8532',
+  red: '#ea4a5a',
+  purple: '#8a63d2',
+  pink: '#ec6cb9',
 }
 
 export const VitesseDarkThemes = {
@@ -32,7 +36,7 @@ export const VitesseDarkThemes = {
   lowActiveBackground: '#292929',
   lowBorder: '#252525',
   comment: '#758575dd',
-  string: '#c98a7d',
+  string: '#c98a7de3',
   variable: '#bd976a',
   keyword: '#4d9375',
   number: '#4C9A91',
@@ -56,4 +60,13 @@ export const VitesseDarkThemes = {
   orange: '#d4976c',
   yellow: '#e6cc77',
   magenta: '#d9739f',
+}
+
+export const colors = Object.entries(baseColors).reduce((acc, [key, value]) => {
+  acc[key] = generateByBase(value)
+  return acc
+}, {}) as Record<keyof typeof baseColors, string[]>
+
+export function pick(key: keyof typeof VitesseDarkThemes) {
+  return VitesseDarkThemes[key]
 }
