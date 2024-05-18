@@ -3,43 +3,46 @@ import { colors, opacity, pick } from './colors'
 function toArray(mayBeArray) {
   return Array.isArray(mayBeArray) ? mayBeArray : [mayBeArray]
 }
+
 export default function getTheme() {
   const foreground = pick('foreground')
-  const secondaryForeground = pick('secondaryForeground')
   const activeForeground = pick('activeForeground')
-  const primary = pick('primary')
-  const border = pick('border')
   const background = pick('background')
+  const hoverBackground = '#1e1e1d'
   const activeBackground = pick('activeBackground')
-  const activePlusBackground = '#1e1e1d'
-  const punctuation = pick('punctuation')
 
+  const primary = pick('primary')
+  const ignored = pick('ignored')
+  const border = pick('border')
+  const punctuation = pick('punctuation')
+  const buttonHoverBackground = colors.green[3]
   const selectionBackground = opacity(colors.blue[4], 0.25)
   const selectionBackgroundInActive = opacity(colors.gray[5], 0.2)
-  const listSelectionBackground = opacity(pick('primary'), 0.3)
+  const listSelectionBackground = opacity(primary, 0.3)
+  const inactiveForeground = opacity(foreground, 0.8)
 
   const theme = {
     name: 'Vitesse Dark Custom',
     base: 'vs-dark',
     colors: {
-      'focusBorder': '#00000000',
+      'focusBorder': primary,
       foreground,
-      'descriptionForeground': secondaryForeground,
+      'descriptionForeground': ignored,
       'errorForeground': pick('red'),
       'textLink.foreground': primary,
       'textLink.activeForeground': primary,
       'textBlockQuote.background': background,
       'textBlockQuote.border': border,
       'textCodeBlock.background': background,
-      'textPreformat.foreground': colors.gray[4],
+      'textPreformat.foreground': inactiveForeground,
       'textSeparator.foreground': colors.gray[6],
 
       'button.background': primary,
       'button.foreground': background,
-      'button.hoverBackground': primary,
+      'button.hoverBackground': buttonHoverBackground,
 
-      'checkbox.background': activeBackground,
-      'checkbox.border': colors.gray[5],
+      'checkbox.background': background,
+      'checkbox.border': colors.gray[7],
 
       'dropdown.background': background,
       'dropdown.border': border,
@@ -49,29 +52,29 @@ export default function getTheme() {
       'input.background': activeBackground,
       'input.border': border,
       'input.foreground': foreground,
-      'input.placeholderForeground': secondaryForeground,
-      'inputOption.activeBackground': pick('ignored'),
+      'input.placeholderForeground': ignored,
+      'inputOption.activeBackground': ignored,
 
       'badge.foreground': background,
-      'badge.background': secondaryForeground,
+      'badge.background': ignored,
 
       'progressBar.background': primary,
 
       'titleBar.activeForeground': activeForeground,
       'titleBar.activeBackground': background,
-      'titleBar.inactiveForeground': colors.gray[4],
+      'titleBar.inactiveForeground': inactiveForeground,
       'titleBar.inactiveBackground': background,
       'titleBar.border': activeBackground,
 
       'activityBar.foreground': foreground,
-      'activityBar.inactiveForeground': pick('ignored'),
+      'activityBar.inactiveForeground': ignored,
       'activityBar.background': background,
       'activityBarBadge.foreground': background,
       'activityBarBadge.background': activeForeground,
       'activityBar.activeBorder': primary,
       'activityBar.border': border,
 
-      'sideBar.foreground': activeForeground,
+      'sideBar.foreground': foreground,
       'sideBar.background': background,
       'sideBar.border': border,
       'sideBarTitle.foreground': foreground,
@@ -87,12 +90,12 @@ export default function getTheme() {
       'list.highlightForeground': primary,
       // ------------ 修改 ------------
       'list.activeSelectionForeground': '#f5f5f5',
-      'list.focusOutline': listSelectionBackground,
-      'list.hoverBackground': activePlusBackground,
+      'list.focusOutline': primary,
+      'list.hoverBackground': hoverBackground,
       'list.inactiveSelectionBackground': opacity(pick('primary'), 0.2),
       'tree.indentGuidesStroke': colors.gray[8],
 
-      'notificationCenterHeader.foreground': colors.gray[4],
+      'notificationCenterHeader.foreground': inactiveForeground,
       'notificationCenterHeader.background': background,
       'notifications.foreground': foreground,
       'notifications.background': background,
@@ -107,27 +110,27 @@ export default function getTheme() {
       'quickInput.foreground': foreground,
       'quickInputList.focusBackground': listSelectionBackground,
 
-      'statusBar.foreground': activeForeground,
+      'statusBar.foreground': foreground,
       'statusBar.background': background,
       'statusBar.border': border,
       'statusBar.noFolderBackground': background,
       'statusBar.debuggingBackground': activeBackground,
-      'statusBar.debuggingForeground': activeForeground,
+      'statusBar.debuggingForeground': foreground,
       'statusBarItem.prominentBackground': activeBackground,
       // 新增
       'statusBarItem.remoteBackground': primary,
-      'statusBarItem.remoteForeground': '#fff',
-      'statusBarItem.remoteHoverBackground': '#36bc83',
+      'statusBarItem.remoteForeground': foreground,
+      'statusBarItem.remoteHoverBackground': buttonHoverBackground,
       'statusBarItem.remoteHoverForeground': '#fff',
 
       'editorGroupHeader.tabsBackground': background,
       'editorGroupHeader.tabsBorder': border,
       'editorGroup.border': border,
 
-      'tab.activeForeground': foreground,
-      'tab.inactiveForeground': colors.gray[4],
+      'tab.activeForeground': activeForeground,
+      'tab.inactiveForeground': inactiveForeground,
       'tab.inactiveBackground': background,
-      'tab.activeBackground': activePlusBackground,
+      'tab.activeBackground': hoverBackground,
       'tab.hoverBackground': activeBackground,
       'tab.unfocusedHoverBackground': background,
       'tab.border': border,
@@ -136,7 +139,7 @@ export default function getTheme() {
       'tab.unfocusedActiveBorder': border,
       'tab.activeBorderTop': primary,
 
-      'breadcrumb.foreground': colors.gray[4],
+      'breadcrumb.foreground': inactiveForeground,
       'breadcrumb.focusForeground': foreground,
       'breadcrumb.background': activeBackground,
       'breadcrumb.activeSelectionForeground': colors.green[2], // 面包屑选中前景色
@@ -165,18 +168,18 @@ export default function getTheme() {
       'diffEditor.insertedTextBackground': '#4d937550',
       'diffEditor.removedTextBackground': '#ab595950',
 
-      'scrollbar.shadow': '#0000',
+      'scrollbar.shadow': '#000',
       'scrollbarSlider.background': pick('faded'),
-      'scrollbarSlider.hoverBackground': pick('ignored'),
-      'scrollbarSlider.activeBackground': pick('ignored'),
+      'scrollbarSlider.hoverBackground': ignored,
+      'scrollbarSlider.activeBackground': ignored,
       'editorOverviewRuler.border': border,
 
       'panel.background': background,
       'panel.border': border, // 终端面板边框颜色
       'panelTitle.activeBorder': primary,
-      'panelTitle.activeForeground': foreground,
-      'panelTitle.inactiveForeground': colors.gray[5],
-      'panelInput.border': colors.gray[6],
+      'panelTitle.activeForeground': activeForeground,
+      'panelTitle.inactiveForeground': inactiveForeground,
+      'panelInput.border': border,
 
       'terminal.foreground': foreground,
       'terminal.selectionBackground': selectionBackground,
@@ -201,9 +204,9 @@ export default function getTheme() {
       'gitDecoration.modifiedResourceForeground': pick('blue'),
       'gitDecoration.deletedResourceForeground': pick('red'),
       'gitDecoration.untrackedResourceForeground': pick('cyan'),
-      'gitDecoration.ignoredResourceForeground': pick('ignored'),
+      'gitDecoration.ignoredResourceForeground': ignored,
       'gitDecoration.conflictingResourceForeground': pick('orange'),
-      'gitDecoration.submoduleResourceForeground': pick('secondaryForeground'),
+      'gitDecoration.submoduleResourceForeground': ignored,
 
       'editorGutter.modifiedBackground': pick('blue'),
       'editorGutter.addedBackground': pick('green'),
@@ -227,8 +230,8 @@ export default function getTheme() {
 
       'settings.headerForeground': foreground,
       'settings.modifiedItemIndicator': primary,
-      'welcomePage.buttonBackground': colors.gray[8],
-      'welcomePage.buttonHoverBackground': colors.gray[7],
+      'welcomePage.buttonBackground': primary,
+      'welcomePage.buttonHoverBackground': colors.green[2],
 
       'problemsErrorIcon.foreground': pick('red'),
       'problemsWarningIcon.foreground': pick('orange'),
@@ -239,18 +242,18 @@ export default function getTheme() {
       'editorInfo.foreground': pick('blue'),
       'editorHint.foreground': pick('green'),
 
-      'editorGutter.commentRangeForeground': pick('ignored'),
-      'editorGutter.foldingControlForeground': pick('secondaryForeground'),
+      'editorGutter.commentRangeForeground': ignored, // 行内注释背景色
+      'editorGutter.foldingControlForeground': ignored, // 折叠控件颜色
 
       'editorInlayHint.foreground': punctuation,
-      'editorInlayHint.background': '#00000000',
+      'editorInlayHint.background': '#000',
       'editorStickyScroll.background': activeBackground,
       'editorStickyScrollHover.background': activeBackground,
       'menu.separatorBackground': border,
       // 新增
       'activityBar.activeBackground': activeBackground, // 活动栏背景色（最左侧）
       'inputOption.activeBorder': primary,
-      'terminalCursor.foreground': '#08b808',
+      'terminalCursor.foreground': colors.green[4],
 
     },
     semanticHighlighting: true,
@@ -262,6 +265,7 @@ export default function getTheme() {
       class: pick('class'),
     },
     tokenColors: [
+
       {
         scope: [
           'comment',
@@ -697,7 +701,7 @@ export default function getTheme() {
           'markup.underline.link.image.markdown',
         ],
         settings: {
-          foreground: secondaryForeground,
+          foreground: ignored,
           fontStyle: 'underline',
         },
       },
@@ -744,21 +748,18 @@ export default function getTheme() {
         },
       },
       {
-        name: 'CSS/SCSS 关键字',
+        name: 'CSS/SCSS/JS关键字',
         scope: [
+          'keyword',
+          'storage.type.function',
+          'storage.type.function.ts',
+          'storage.type.interface',
+          'storage.type.enum',
+          'variable.language.this',
           'keyword.control.at-rule',
         ],
         settings: {
           foreground: '#c686c0',
-        },
-      },
-      {
-        name: 'this 关键字',
-        scope: [
-          'variable.language.this',
-        ],
-        settings: {
-          foreground: colors.pink[4],
         },
       },
       {

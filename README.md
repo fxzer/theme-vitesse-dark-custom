@@ -22,7 +22,6 @@ VSCode 扩展市场安装[Vitesse Dark Custom](https://marketplace.visualstudio.
 根据自己使用习惯，基于 Vitesse Dark Theme 主题做了以下自定义修改。
 
 - 删除 light、soft相关主题，只保留默认暗色主题（减小扩展体积）
-- 自动根据基础色，生成 10 个亮暗递增的颜色
 - 工作区边框线变明显
 - 光标选中文字背景色变明显
 - 非当前行号前景变淡
@@ -34,6 +33,7 @@ VSCode 扩展市场安装[Vitesse Dark Custom](https://marketplace.visualstudio.
 - 突显文件列表中当前激活、聚集的文件，顶部命令中心聚焦背景色
 - 增加 Vim 聚焦在文件列表时高亮边框样式
 - 稍微减淡字符串前景色
+- 将字符串颜色改为主色调绿色
 
 
 ## 简化自己的 VSCode 全局配置
