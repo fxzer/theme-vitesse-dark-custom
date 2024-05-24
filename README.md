@@ -15,7 +15,7 @@ VSCode 扩展市场安装[Vitesse Dark Custom](https://marketplace.visualstudio.
 
 ## 预览
 
-<p align="center"><img src="https://github.com/fxzer/theme-vitesse-dark-custom/blob/main/example.jpg"></p>
+<p align="center"><img src="https://zerdocs.oss-cn-shanghai.aliyuncs.com/example.png"></p>
 
 ## 特性
 
@@ -34,7 +34,6 @@ VSCode 扩展市场安装[Vitesse Dark Custom](https://marketplace.visualstudio.
 - 增加 Vim 聚焦在文件列表时高亮边框样式
 - 稍微减淡字符串前景色
 - 将字符串颜色改为主色调绿色
-
 
 ## 简化自己的 VSCode 全局配置
 
