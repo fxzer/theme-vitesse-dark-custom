@@ -258,7 +258,7 @@
         "entity.name"
       ],
       "settings": {
-        "foreground": "#80a665"
+        "foreground": "#98C379"
       }
     },
     {
@@ -279,7 +279,7 @@
     {
       "scope": "entity.name.function",
       "settings": {
-        "foreground": "#80a665"
+        "foreground": "#98C379"
       }
     },
     {
@@ -321,7 +321,7 @@
         "attribute.value"
       ],
       "settings": {
-        "foreground": "#80a665d9"
+        "foreground": "#80a665"
       }
     },
     {
@@ -330,7 +330,7 @@
         "punctuation.support.type.property-name"
       ],
       "settings": {
-        "foreground": "#80a665d9"
+        "foreground": "#80a665"
       }
     },
     {
@@ -440,7 +440,7 @@
     {
       "scope": "string variable",
       "settings": {
-        "foreground": "#80a665d9"
+        "foreground": "#80a665"
       }
     },
     {
@@ -460,7 +460,7 @@
         "string.regexp string.regexp.arbitrary-repitition"
       ],
       "settings": {
-        "foreground": "#80a665d9"
+        "foreground": "#80a665"
       }
     },
     {
@@ -647,7 +647,7 @@
         "punctuation.definition.string.end.markdown"
       ],
       "settings": {
-        "foreground": "#80a665d9"
+        "foreground": "#80a665"
       }
     },
     {
@@ -674,7 +674,7 @@
         "entity.other.attribute-name.html.vue"
       ],
       "settings": {
-        "foreground": "#80a665"
+        "foreground": "#98C379"
       }
     },
     {
@@ -833,11 +833,11 @@
     },
     {
       "token": "entity",
-      "foreground": "80a665"
+      "foreground": "98C379"
     },
     {
       "token": "entity.name",
-      "foreground": "80a665"
+      "foreground": "98C379"
     },
     {
       "token": "variable.parameter.function",
@@ -853,7 +853,7 @@
     },
     {
       "token": "entity.name.function",
-      "foreground": "80a665"
+      "foreground": "98C379"
     },
     {
       "token": "keyword",
@@ -901,23 +901,23 @@
     },
     {
       "token": "string",
-      "foreground": "80a665d9"
+      "foreground": "80a665"
     },
     {
       "token": "string punctuation.section.embedded source",
-      "foreground": "80a665d9"
+      "foreground": "80a665"
     },
     {
       "token": "attribute.value",
-      "foreground": "80a665d9"
+      "foreground": "80a665"
     },
     {
       "token": "punctuation.definition.string",
-      "foreground": "80a665d9"
+      "foreground": "80a665"
     },
     {
       "token": "punctuation.support.type.property-name",
-      "foreground": "80a665d9"
+      "foreground": "80a665"
     },
     {
       "token": "support",
@@ -1009,7 +1009,7 @@
     },
     {
       "token": "string variable",
-      "foreground": "80a665d9"
+      "foreground": "80a665"
     },
     {
       "token": "source.regexp",
@@ -1021,19 +1021,19 @@
     },
     {
       "token": "string.regexp.character-class",
-      "foreground": "80a665d9"
+      "foreground": "80a665"
     },
     {
       "token": "string.regexp constant.character.escape",
-      "foreground": "80a665d9"
+      "foreground": "80a665"
     },
     {
       "token": "string.regexp source.ruby.embedded",
-      "foreground": "80a665d9"
+      "foreground": "80a665"
     },
     {
       "token": "string.regexp string.regexp.arbitrary-repitition",
-      "foreground": "80a665d9"
+      "foreground": "80a665"
     },
     {
       "token": "string.regexp constant.character.escape",
@@ -1185,19 +1185,19 @@
     },
     {
       "token": "constant.other.reference.link",
-      "foreground": "80a665d9"
+      "foreground": "80a665"
     },
     {
       "token": "string.other.link",
-      "foreground": "80a665d9"
+      "foreground": "80a665"
     },
     {
       "token": "punctuation.definition.string.begin.markdown",
-      "foreground": "80a665d9"
+      "foreground": "80a665"
     },
     {
       "token": "punctuation.definition.string.end.markdown",
-      "foreground": "80a665d9"
+      "foreground": "80a665"
     },
     {
       "token": "markup.underline.link.markdown",
@@ -1217,7 +1217,7 @@
     },
     {
       "token": "entity.other.attribute-name.html.vue",
-      "foreground": "80a665"
+      "foreground": "98C379"
     },
     {
       "token": "invalid.illegal.unrecognized-tag.html"
